@@ -1,12 +1,89 @@
 [
     {
+        "id": "001",
         "name": "Kevin",
         "description": "Has a beautiful gf",
-        "image": "/images/kevin-icon.png"
+        "image": "images/kevin-icon.png",
+        "tags" : ["real"]
     },
     {
+        "id": "002",
         "name": "Aykah",
         "description": "She is really pretty and I like how she looks",
-        "image": "/images/aykah-icon.jpg"
+        "image": "images/aykah-icon.jpg",
+        "tags" : ["real"]
+    },
+    {
+        "id": "003",
+        "name": "Abbo",
+        "description": "He's just a cheeky guy",
+        "image": "images/fruits/apple.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "004",
+        "name": "Pear",
+        "image": "images/fruits/pear.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "005",
+        "name": "Lemon",
+        "image": "images/fruits/lemon.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "006",
+        "name": "Starfruit",
+        "image": "images/fruits/starfruit.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "007",
+        "name": "Strawberry",
+        "image": "images/fruits/strawberry.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "008",
+        "name": "Plum",
+        "image": "images/fruits/plum.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "009",
+        "name": "Dragonfruit",
+        "image": "images/fruits/dragon_fruit.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "010",
+        "name": "Cherry",
+        "image": "images/fruits/cherry.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "011",
+        "name": "Orange",
+        "image": "images/fruits/orange.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "012",
+        "name": "Pineapple",
+        "image": "images/fruits/pineapple.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "013",
+        "name": "Raspberry",
+        "image": "images/fruits/raspberry.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "014",
+        "name": "Watermelon",
+        "image": "images/fruits/watermelon.gif",
+        "tags" : ["drawn", "fruit"]
     }
 ]

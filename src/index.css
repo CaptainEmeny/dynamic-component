@@ -1,7 +1,41 @@
+@font-face{
+    font-family:'Fruity Juice';
+    src: url('./assets/Juice.otf')
+}
+
+body{
+  font-family: 'Fruity Juice';
+
+  background-color:rgb(58, 58, 58);
+  color:rgb(255, 255, 255)
+}
+
+.title{
+  justify-content: center;
+  text-align: center;
+}
+
+/* Creates the grid logic for the filter and cards */
+.grid{
+  display: grid;
+  grid-template-areas:'categoryBox cardContainer';
+}
+
+.card-container{
+  grid-area: 'cardContainer';
+}
+
+
+/* Search Bar */
+.search-bar{
+
+}
+
+/* Card */
 .card{
-  border: 1px solid rgb(197, 197, 197);
+  border: 1px solid #c5c5c5;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.396);
   padding: 30px;
   margin: 10px;
 
@@ -24,11 +58,64 @@
 .card .card-header{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  color:black;
-
 }
 
 .card .card-text{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color:rgba(0, 0, 0, 0.795)
+}
+
+/* Category Box (Filter & Sorter) */
+.category-box{
+  background-color:rgba(0, 0, 0, 0.319);
+  grid-area: 'categoryBox';
+
+  width: 300px;
+  height: 600px;
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.396);
+
+  padding: 10px;
+  margin: 20px;
+
+}
+.side-header{
+  font-size: 2em;
+  text-align: center;
+}
+
+.sort-box{
+
+}
+.category-sort{
+  margin-left: 0.5em;
+}
+
+.filter-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px;
+  column-gap: 5%;
+  row-gap: 15%;
+}
+.category-tag{
+  background-color: transparent;
+
+  font-family: 'Fruity Juice';
+  color: white;
+
+  border: solid 1px white;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.396);
+
+
+  margin-left: 0.5em;
+  height:7em;
+
+  transition: 0.2s;
+}
+.category-tag:hover{
+  filter: brightness(70%);
+
+  transition: 0.2s;
 }

@@ -1,16 +1,19 @@
+import React, {useState, useEffect} from 'react' 
+
 import Card from './Card.jsx'
-import people from './assets/people.json'
 
 
-function CardRow(){
+function CardRow({cards}){
 
     return(
-        <>
-        <Card name={people[0].name} description={people[0].description} image={people[0].image}/>
-        <Card name={people[1].name} description={people[1].description} image={people[1].image}/>
-        <Card/>
-        <Card/>
-        </>
+        <div className = 'card-container'>
+            {cards.map(person =>(
+            <Card key={person.id}
+            name={person.name}
+            description={person.description}
+            image={person.image}
+            />))}
+        </div>
     )
 }
 
