@@ -85,5 +85,17 @@
         "name": "Watermelon",
         "image": "images/fruits/watermelon.gif",
         "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "015",
+        "name": "Grape",
+        "image": "images/fruits/grape.gif",
+        "tags" : ["drawn", "fruit"]
+    },
+    {
+        "id": "016",
+        "name": "Blueberry",
+        "image": "images/fruits/blueberry.gif",
+        "tags" : ["drawn", "fruit"]
     }
 ]

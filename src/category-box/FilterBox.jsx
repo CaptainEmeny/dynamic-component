@@ -1,6 +1,7 @@
+import React, {useState} from 'react'
 import Filter from './Filter.jsx'
 
-function FilterBox(){
+function FilterBox({filterTags}){
 
     const cardFilter = [{'tag': 'real', 'color': '#3c68fa'}, {'tag':'drawn', 'color': '#149916'}, {'tag':'fruit', 'color': '#ff5959'}, {'tag':'animated', 'color': '#e4ba13ff'}];
 
@@ -12,7 +13,8 @@ function FilterBox(){
                     <Filter 
                     key= {filter.tag}
                     tag= {filter.tag} 
-                    color= {filter.color}/>
+                    color= {filter.color}
+                    filterTags = {filterTags}/>
                 ))}
             </div>
         </>

@@ -1,18 +1,16 @@
-function Filter({tag = 'empty', color = 'white'}){
+function Filter({tag = 'empty', color = 'white', filterTags}){
 
     const styles = {
         backgroundColor: `${color}` 
     }
 
-    const cardCheck = (e) =>{
-        console.log(e.target.id)
-    }
 
     return(
         <button
                 style = {styles}
-                className = "category-tag" 
+                className = "category-tag"
                 key = {tag}
+                onClick = {filterTags}
                 id = {tag}>{tag}</button>
     )
 }

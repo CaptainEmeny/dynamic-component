@@ -11,6 +11,7 @@ function App() {
 
   const [cards, setCards] = useState(people);
 
+
   
 
   const filterText = (e) => {
@@ -19,12 +20,21 @@ function App() {
   }
 
 
+  const filterTags = (e) => {
+      const tag = e.target.id;
+      const filter = people.filter(({tags})=> tags.includes(tag));
+
+
+      setCards(filter);
+  }
+  
+
   return(
     <>
     <h1 className = 'title'>PERSONAL CARDS</h1>
-    <SearchBar cards= {cards} filterText = {filterText}/>
     <div className = "grid">
-      <CategoryBox cards= {cards}/>
+      <SearchBar cards= {cards} filterText = {filterText}/>
+      <CategoryBox cards= {cards} filterTags = {filterTags}/>
       <CardRow cards= {cards}/>
     </div>
     </>
