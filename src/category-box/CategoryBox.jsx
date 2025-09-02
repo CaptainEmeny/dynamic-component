@@ -2,12 +2,12 @@ import FilterBox from './FilterBox'
 import SortBox from './SortBox'
 
 
-function CategoryBox({filterTags}){
+function CategoryBox({settings, setSettings}){
 
     return(
         <div className= "category-box">
-            <SortBox/>
-            <FilterBox filterTags = {filterTags}/>
+            <SortBox settings = {settings} setSettings = {setSettings}/>
+            <FilterBox settings = {settings} setSettings = {setSettings}/>
         </div>
     )
 }

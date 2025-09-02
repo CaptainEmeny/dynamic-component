@@ -1,9 +1,26 @@
-function Filter({tag = 'empty', color = 'white', filterTags}){
+function Filter({tag = 'empty', color = 'white', settings, setSettings}){
+
+    const filterTags = (e) => {
+        const filter = e.target.id;
+
+        //Add to make it active
+        if (filter !== settings.tag){
+            
+            document.getElementById(settings.tag)?.classList.remove('active'); //Remove active from previous
+            
+            setSettings(s => ({...s, 'tag': filter}));
+            e.target.classList.add('active');
+
+        } else{
+            setSettings(s => ({...s, 'tag': ''}));
+            e.target.classList.remove('active');
+
+        }
+    }
 
     const styles = {
         backgroundColor: `${color}` 
     }
-
 
     return(
         <button

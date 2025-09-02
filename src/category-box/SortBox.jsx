@@ -1,27 +1,20 @@
-function SortBox(){
+import Sort from './Sort.jsx'
 
-    const cardSort = ['id', 'name', 'age'];
+function SortBox({setSettings}){
 
-    const cardCheck = (e) =>{
-        console.log(e.target.id)
-    }
+    const cardSort = ['id', 'name'];
 
     return(
-        <div className= 'sort-box'>
-            <h2 className = "side-header">Sort</h2>
-            {cardSort.map((sort) =>(
-                <div key= {sort + `-div`}>
-                    <input onChange={cardCheck}
-                           className= "category-sort"
-                           key= {sort}
-                           type="radio" 
-                           id={sort}
-                           name="cardSort"
-                           value= {sort}/>
-
-                    <label htmlFor={sort}>{sort}</label>
-                </div>))}
-        </div>
+        <>
+        <h2 className = "side-header">Sort</h2>
+            <div className= 'sort-box'>
+                {cardSort.map((sort) =>(
+                    <Sort key= {sort}
+                          sort= {sort} 
+                          setSettings = {setSettings}/>
+                ))}
+            </div>
+        </>
     )
 }
 

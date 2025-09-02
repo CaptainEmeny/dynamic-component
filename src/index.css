@@ -108,11 +108,15 @@ body{
 }
 
 .sort-box{
-
+  font-size: 1.4em;
+  padding-left: 5%;
 }
+
 .category-sort{
   margin-left: 0.5em;
+  margin-bottom: 5%;
 }
+
 
 .filter-box{
   display: grid;
@@ -135,10 +139,17 @@ body{
   margin-left: 0.5em;
   height:7em;
 
+  cursor: pointer;
+
   transition: 0.2s;
 }
 .category-tag:hover{
   filter: brightness(70%);
 
   transition: 0.2s;
+}
+.category-tag.active{
+  transform: scale(1.15);
+  filter: brightness(130%);
+
 }
